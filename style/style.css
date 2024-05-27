@@ -1,0 +1,118 @@
+:root {
+
+    --clr-very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --clr-Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --clr-Grayish-Blue: hsl(212, 23%, 69%);
+    --clr-Light-Grayish-Blue: hsl(210, 46%, 95%); 
+
+    font-size: 13px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--clr-Light-Grayish-Blue);
+}
+
+body header {
+    height: 200px;
+}
+
+article header img.drawer {
+    height: 200px;
+    width: 327px;
+    border-radius: 10px 10px 0 0;
+}
+
+article.card-container {
+    width: 327px;
+    height: 512px;
+    margin: 74px 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+article section.description {
+    padding: 36px 32px 20px 32px;
+    height: 240px;
+}
+
+article section.description h2 {
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: var(--clr-very-Dark-Grayish-Blue);
+}
+
+article section.description p{
+    margin: 0;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: .12px;
+    color: var(--clr-Desaturated-Dark-Blue);
+}
+
+footer{
+    overflow: hidden;
+    padding: 12px 32px 20px 20px;
+}
+
+footer div.non-active{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+footer div div.bio{
+    display: flex;
+    column-gap: 16px;
+}
+
+button{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-color: var(--clr-Light-Grayish-Blue);
+    border: none;
+}
+
+footer div img.michelle{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    align-self: center;
+}
+
+footer div.active{
+    max-height: 0;
+    display: none;
+}
+
+div.name h3{
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: var(--clr-very-Dark-Grayish-Blue);
+    font-weight: 800;
+    margin: 0;
+}
+
+div.name p{
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    color: var(--clr-Desaturated-Dark-Blue);
+    font-weight: 500;
+    margin: 0;
+}
