@@ -65,26 +65,56 @@ article section.description p{
 footer{
     overflow: hidden;
     padding: 12px 32px 20px 20px;
-}
-
-footer div.non-active{
+    height: 72px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    border-radius: 0 0 10px 10px;
 }
 
-footer div div.bio{
+footer.background_change{
+    background-color: var(--clr-very-Dark-Grayish-Blue);
+}
+
+footer div.footer-left{
+    overflow: hidden;
     display: flex;
-    column-gap: 16px;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+footer div.sub-left{
+    display: flex;
+    justify-content: space-between;
+    max-height: inherit;
+    max-height: 0;
+    overflow: hidden;
+}
+
+footer div.sub-left.active{
+    max-height: fit-content;
+}
+
+.footer-left div.bio{
+    width: 172px;
+    height: 40px;
+}
+
+.footer-left div.shared{
+    width: 175px;
+    height: 20px;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 button{
     width: 32px;
     height: 32px;
+    max-height: inherit;
     border-radius: 100%;
     background-color: var(--clr-Light-Grayish-Blue);
     border: none;
+    align-self: center;
 }
 
 footer div img.michelle{
@@ -92,27 +122,54 @@ footer div img.michelle{
     height: 40px;
     border-radius: 100%;
     align-self: center;
+    max-height: inherit;
 }
 
-footer div.active{
-    max-height: 0;
-    display: none;
+div.sub-right{
+    overflow: hidden;
 }
 
-div.name h3{
+div.sub-right h3{
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.12px;
     color: var(--clr-very-Dark-Grayish-Blue);
     font-weight: 800;
     margin: 0;
+    max-height: inherit;
 }
 
-div.name p{
+div.sub-right p{
     font-size: 13px;
     line-height: 20px;
     letter-spacing: 0.12px;
     color: var(--clr-Desaturated-Dark-Blue);
     font-weight: 500;
     margin: 0;
+    max-height: inherit;
+}
+
+
+div.shared h3{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 5px;
+    color: var(--clr-Light-Grayish-Blue);
+    width: 62px;
+}
+
+div.shared img{
+    width: 20px;
+    height: 20px;
+    max-height: inherit;
+}
+
+div.socials{
+    display: flex;
+    justify-content: space-between;
+    width: 92px;
+    max-height: inherit;
 }

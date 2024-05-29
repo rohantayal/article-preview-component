@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style/font.css">
   <link rel="stylesheet" href="./style/index.css">
-
+  <script src="./js/main.js"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Article preview component</title>
@@ -36,35 +36,33 @@
 
     </section>
 
-
     <footer>
 
-      <div class="non-active">
+      <div class="footer-left">
 
-        <div class="bio">
+        <div class="sub-left bio active">
           <img src="./images/avatar-michelle.jpg" alt="Michelle avatar" class="michelle">
 
-          <div class="name">
+          <div class="sub-right">
             <h3>Michelle Appleton</h3>
             <p>28 Jun 2020</p>
+          </div>
+        </div>
+
+        <div class="sub-left shared">
+          <h3>Share</h3>
+
+          <div class="sub-right socials">
+            <img src="./images/icon-facebook.svg" alt="Facebook">
+            <img src="./images/icon-twitter.svg" alt="Twitter">
+            <img src="./images/icon-pinterest.svg" alt="Pinterest">
           </div>
 
         </div>
 
-        <button><img src="./images/icon-share.svg" alt="Share" id="share-icon"></button>
-
       </div>
 
-      <div class="active">
-        <h3>Share</h3>
-
-        <img src="./images/icon-facebook.svg" alt="Facebook">
-        <img src="./images/icon-twitter.svg" alt="Twitter">
-        <img src="./images/icon-pinterest.svg" alt="Pinterest">
-
-        <button><img src="./images/icon-share.svg" alt="Share"></button>
-
-      </div>
+      <button><img src="./images/icon-share.svg" alt="Share" id="share-icon"></button>
 
     </footer>
   </article>
