@@ -215,6 +215,45 @@ div.socials{
         grid-column: 2/3;
         align-self: end;
         padding: 0px 40px 32px 40px;
+        position: relative;
+        overflow: visible;
+    }
+
+    footer div.sub-left{
+        max-height: fit-content;
+    }
+
+    .footer-left div.shared{
+        position: absolute;
+        background-color: var(--clr-very-Dark-Grayish-Blue);
+        top: -79px;
+        right: -67px;
+        width: 248px;
+        height: 55px;
+        justify-content: center;
+        column-gap: 21px;
+        border-radius: 10px;
+        overflow: visible;
+        max-height: 0;
+    }
+
+    div.shared::after{
+        content: "";
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background-color: var(--clr-very-Dark-Grayish-Blue);
+        transform: rotate(45deg);
+        top: 43px;
+        z-index: 1000;
+        max-height: 0;
+    }
+    div.shared.active::after{
+        max-height: fit-content;
+    }
+
+    footer.background_change{
+        background-color: white;
     }
     
 }
