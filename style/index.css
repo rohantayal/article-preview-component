@@ -23,13 +23,20 @@ body {
 
 body header {
     height: 200px;
+    width: 327px;
+    overflow: hidden;
 }
 
 article header img.drawer {
-    height: 200px;
-    width: 327px;
+    width: 350px;
+    height: auto;
     border-radius: 10px 10px 0 0;
+    transition: transform 0.5s ease-in-out;
 }
+
+article header:hover > img {
+    transform: scale(1.2);
+  }
 
 article.card-container {
     width: 327px;
@@ -186,11 +193,11 @@ div.socials{
 
     body header{
         height: 280px;
+        width: 285px;
     }
 
     article header img.drawer{
-        width: 285px;
-        height: 280px;
+        overflow: hidden;
         grid-row: 1/2;
         grid-column: 1/2;
         border-radius: 10px 0 0 10px;
